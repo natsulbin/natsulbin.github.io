@@ -4,12 +4,19 @@ html {
     justify-content: center;
 }
 body {
-    width: 70%;
-    height: 100%;
+    width: 50%;
+    min-width: 500px;
+    min-height: 98vh;
     margin: 0;
     background-color: #eceff5;
     box-shadow: 0 0 30px 0 #0000007a;
-    font-size: 0;
+    font-size: 5vw;
+}
+
+.header {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
 }
 
 .blog-background {
@@ -48,17 +55,17 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
 .blog-title {
-    font-size: 5vw;
+    font-size: 3vw;
     font-weight: bold;
     color: #ffffff;
     display: flex;
     align-items: center;
 }
 .blog-motto {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: bold;
     color: #858585;
 }
@@ -82,8 +89,9 @@ body {
 .menu-item-link {
     padding: 0 5vw 0 5vw;
     text-decoration: none;
-    font-size: 1.5vw;
-    color: #858585;
+    font-size: 1vw;
+    font-weight: bold;
+    color: #b1b1b1;
 }
 
 .main {
@@ -129,17 +137,32 @@ body {
 .post-title-link {
     text-decoration: none;
     color: #000000;
-    font-size: 3vw;
-    font-weight: bold;
+    font-size: 1.5vw;
 }
 .post-content {
-    margin: 0 0 0 10px;
-}
-.post-content h1 {
-    margin: 0;
+    margin: 0 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
 }
 .post-content p {
+    display: none;
+}
+.post-content>blockquote {
     margin: 0;
+    grid-area: 1 / 1 / 2 /4;
+}
+.post-content>blockquote>p {
+    display: block;
+    font-size: 1.2vw;
+}
+.post-content>img {
+    border-radius: 5px;
+}
+.post-content>img:nth-of-type(n+10) {
+    display: none;
 }
 
 .page-nav {
@@ -148,7 +171,7 @@ body {
     display: inline-flex;
     justify-content: center;
     line-height: 60px;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 .page-number,
 a.extend.prev,
@@ -160,4 +183,25 @@ a.extend.next {
 .page-number.current {
     text-decoration: none;
     color: #858585
+}
+
+.post-inner {
+    width: 100%;
+    min-width: 600px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: inline-flex;
+    justify-content: center;
+}
+.post-inner-container {
+    width: 80%;
+    min-width: 600px;
+    border-radius: 10px;
+    background: #ffffffc4;
+    box-shadow: 0 0 0px #0000007a;
+    z-index: 2;
+}
+.post-inner img{
+    width: 100%;
 }
