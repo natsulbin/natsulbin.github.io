@@ -1,0 +1,90 @@
+html {
+    background-color: #eceff5;
+}
+body {
+    width: 90%;
+    height: 100%;
+    margin: 0 0 0 5%;
+    background-color: #eceff5;
+    box-shadow: 0 0 30px 0 #0000007a;
+    font-size: 0;
+}
+
+.blog-background {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.blog-header-container {
+    width: 100%;
+    position: absolute;
+    top: 300px;
+    display: inline-flex;
+    justify-content: flex-start;
+    transform: translateX(10px) translateY(-50%);
+}
+
+.blog-head {
+    width: 15%;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 10%;
+    border: 4px solid #ffffff;
+    background-color: #ffffff;
+    transform: scale(0.8);
+}
+.blog-head::before {
+    content: "";
+    padding-top: 100%;
+    display: block;
+}
+
+.blog-word-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 6px;
+    padding-bottom: 3%;
+}
+.blog-title {
+    font-size: 5vw;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.blog-motto {
+    font-size: 2vw;
+    color: #858585;
+}
+
+.navbar {
+    height: 100px;
+    background-color: #ffffff;
+}
+.menu {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 65px;
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+.radious {
+    width: 100%;
+    height: 50px;
+    top: 0;
+    background-color: #ffffff;
+}
+.radious-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #eceff5;
+    border-radius: 5px 5px 0 0;
+}
+
+.main {
+    font-size: 10px;
+}
