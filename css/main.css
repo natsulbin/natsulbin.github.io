@@ -4,7 +4,7 @@ html {
     justify-content: center;
 }
 body {
-    width: 50%;
+    width: 50vw;
     min-width: 500px;
     min-height: 98vh;
     margin: 0;
@@ -106,9 +106,6 @@ body {
     background-color: #ffffff;
     border-radius: 5px;
 }
-.post img {
-    width: 100%;
-}
 .post-header {
     display: inline-flex;
 }
@@ -152,14 +149,17 @@ body {
 }
 .post-content>blockquote {
     margin: 0;
-    grid-area: 1 / 1 / 2 /4;
+    grid-area: 1 / 1 / 2 / 4;
 }
 .post-content>blockquote>p {
     display: block;
     font-size: 1.2vw;
 }
 .post-content>img {
+    width: 100%;
+    min-height: max(calc((50vw - 50px) / 3),150px);
     border-radius: 5px;
+    object-fit: cover;
 }
 .post-content>img:nth-of-type(n+10) {
     display: none;
@@ -172,17 +172,19 @@ body {
     justify-content: center;
     line-height: 60px;
     font-size: 1vw;
+    font-family: "Times";
+    font-weight: bold;
 }
 .page-number,
 a.extend.prev,
 a.extend.next {
     text-decoration: none;
     color: #000000;
-    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
 }
 .page-number.current {
     text-decoration: none;
-    color: #858585
+    color: #acacac
 }
 
 .post-inner {
@@ -197,10 +199,10 @@ a.extend.next {
 .post-inner-container {
     width: 80%;
     min-width: 600px;
-    border-radius: 10px;
-    background: #ffffffc4;
-    box-shadow: 0 0 0px #0000007a;
-    z-index: 2;
+    border-radius: 5px;
+    background: #ffffffbd;
+    box-shadow: 0 0 30px #0000007a;
+    z-index: 1;
 }
 .post-inner img{
     width: 100%;
