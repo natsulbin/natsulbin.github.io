@@ -1,12 +1,12 @@
 .post-inner {
     width: 100%;
-    min-width: 600px;
     position: absolute;
     top: 10px;
     left: 0;
     display: inline-flex;
     justify-content: center;
-    font-size: 1.5vw;
+    font-size: 1vw;
+    z-index: 3;
 }
 .post-inner-container {
     width: 80%;
@@ -20,20 +20,27 @@
 
 .post-inner-header {
     font-family: "Times", "方正标雅宋体";
-    border-bottom: 2px solid #85858585;
-    padding-bottom: 5px;
+    width: 100%;
+    display: inline-flex;
+    align-items: flex-end;
 }
 .post-inner-title>h2 {
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: bold;
-    margin: 0 0 0 0;
+    margin: 0 10px 0 0;
 }
 .post-inner-time {
-    font-size: 1.5vw;
+    font-size: 1vw;
     color: #85858585;
-    margin: 0 0 1vw 0;
 }
 
+.post-inner-content {
+    background-color: #ffffff;
+    box-shadow: 0 0 30px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 -10px rgb(0 0 0 / 20%);
+    padding: 0 10px 10px 10px;
+    border-radius: 5px;
+}
 .post-inner img{
     width: 100%;
     border-radius: 5px;
