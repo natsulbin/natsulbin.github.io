@@ -2,3 +2,8 @@
     font-family: '方正标雅宋体';
     src: url('../fonts/FZBIAOYSJW.TTF');
 }
+@font-face {
+    font-family:HarmonyOS_Sans_SC_Medium;
+    src: url('https://cdn.jsdelivr.net/gh/irozhi/HarmonyOS-Sans/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/irozhi/HarmonyOS-Sans/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.woff') format('woff');
+}

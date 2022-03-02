@@ -12,15 +12,16 @@
     width: 80%;
     min-width: 600px;
     border-radius: 5px;
+    padding: 10px;
     background: hsla(0, 0%, 100%, .8);
     backdrop-filter: saturate(200%) blur(20px);
     box-shadow: 0 0 30px rgb(0 0 0 / 20%);
-    padding: 10px
 }
 
 .post-inner-header {
     font-family: "Times", "方正标雅宋体";
-    width: 100%;
+    border-bottom: 2px solid #85858585;
+    padding-bottom: 5px;
 }
 .post-inner-title>h2 {
     font-size: 4vw;
@@ -35,4 +36,5 @@
 
 .post-inner img{
     width: 100%;
+    border-radius: 5px;
 }

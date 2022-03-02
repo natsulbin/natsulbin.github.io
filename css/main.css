@@ -1,4 +1,5 @@
 html {
+    font-family: "HarmonyOS_Sans_SC_Medium";
     background-color: #eceff5;
     display: inline-flex;
     justify-content: center;
@@ -6,7 +7,7 @@ html {
 body {
     width: 50vw;
     min-width: 500px;
-    min-height: 98vh;
+    min-height: 100vh;
     margin: 0;
     background-color: #eceff5;
     box-shadow: 0 0 30px 0 #0000007a;
@@ -28,12 +29,13 @@ body {
 }
 
 .blog-header-container {
-    width: 100%;
+    width: 50vw;
     position: absolute;
     top: 300px;
     display: inline-flex;
     justify-content: flex-start;
-    transform: translateX(0.1vw) translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 0;
 }
 
 .blog-head {
@@ -72,31 +74,6 @@ body {
     color: #858585;
 }
 
-.navbar {
-    width: 100%;
-    height: 10vw;
-    max-height: 100px;
-    background-color: #ffffff;
-    display: inline-flex;
-    flex-direction: column-reverse;
-}
-.menu {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    justify-content: center;
-    list-style: none;
-}
-.menu-item-link {
-    padding: 0 5vw 0 5vw;
-    text-decoration: none;
-    font-size: 1vw;
-    font-weight: bold;
-    font-family: '方正标雅宋体';
-    color: #b1b1b1;
-}
-
 .main {
     font-size: 10px;
 }
@@ -132,6 +109,7 @@ body {
 }
 
 .post-title {
+    height: 2vw;
     margin: 0 0 0 10px;
 }
 .post-title-link {
@@ -141,8 +119,10 @@ body {
     font-weight: bold;
 }
 .post-title-link:hover {
+    color: #88b0be;
     text-decoration: underline;
 }
+
 .post-content {
     margin: 0 10px 10px 10px;
     display: grid;
@@ -193,7 +173,13 @@ a.extend.next {
     color: #000000;
     margin: 0 10px 0 10px;
 }
+.page-number:hover,
+a.extend.prev:hover,
+a.extend.next:hover {
+    color: #88b0be;
+}
 .page-number.current {
+    font-size: 1.5vw;
     text-decoration: none;
     color: #acacac
 }
