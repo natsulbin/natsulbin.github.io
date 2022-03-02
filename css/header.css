@@ -87,14 +87,14 @@
     padding: 0 2vw 10px 2vw;
     list-style: none;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 15px;
     font-weight: bold;
     color: #b1b1b1;
     transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 .menu-item-link:hover {
     color: #88b0be;
-    font-size: 2vw;
+    font-size: 20px;
 }
 .seize {
     width: 100%;

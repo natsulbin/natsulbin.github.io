@@ -1,3 +1,6 @@
+body {
+    width: 100%;
+}
 .post-inner {
     width: 100%;
     position: absolute;
@@ -13,6 +16,7 @@
     min-width: 600px;
     border-radius: 5px;
     padding: 10px;
+    margin: 0;
     background: hsla(0, 0%, 100%, .8);
     backdrop-filter: saturate(200%) blur(20px);
     box-shadow: 0 0 30px rgb(0 0 0 / 20%);
@@ -30,18 +34,45 @@
     margin: 0 10px 0 0;
 }
 .post-inner-time {
-    font-size: 1vw;
-    color: #85858585;
+    font-size: 1.5vw;
+    color: #858585;
 }
 
 .post-inner-content {
-    background-color: #ffffff;
+    background: hsla(0, 0%, 100%, .8);
     box-shadow: 0 0 30px rgb(0 0 0 / 20%);
-    box-shadow: 0 0 -10px rgb(0 0 0 / 20%);
     padding: 0 10px 10px 10px;
     border-radius: 5px;
 }
 .post-inner img{
     width: 100%;
     border-radius: 5px;
+}
+
+.header,
+.post-inner {
+    animation: post-inner 1s ease-in;
+}
+@keyframes post-inner {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.post-inner-content {
+    animation: post-inner-content 1s ease-in;
+}
+@keyframes post-inner-content {
+    0% {
+        opacity: 0;
+        transform: translateY(-35px);
+      }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
