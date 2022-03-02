@@ -11,7 +11,9 @@ body {
     background-color: #eceff5;
     box-shadow: 0 0 30px 0 #0000007a;
     font-size: 5vw;
+    color: #5f5f5f;
 }
+
 
 .header {
     width: 100%;
@@ -35,7 +37,7 @@ body {
 }
 
 .blog-head {
-    width: 15%;
+    width: 15vw;
     max-width: 150px;
     max-height: 150px;
     border-radius: 10%;
@@ -55,7 +57,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-bottom: 1%;
+    padding-bottom: 1vw;
 }
 .blog-title {
     font-size: 3vw;
@@ -91,6 +93,7 @@ body {
     text-decoration: none;
     font-size: 1vw;
     font-weight: bold;
+    font-family: '方正标雅宋体';
     color: #b1b1b1;
 }
 
@@ -133,8 +136,12 @@ body {
 }
 .post-title-link {
     text-decoration: none;
-    color: #000000;
+    color: #5f5f5f;
     font-size: 1.5vw;
+    font-weight: bold;
+}
+.post-title-link:hover {
+    text-decoration: underline;
 }
 .post-content {
     margin: 0 10px 10px 10px;
@@ -144,6 +151,10 @@ body {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
 }
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
 .post-content p {
     display: none;
 }
@@ -187,23 +198,3 @@ a.extend.next {
     color: #acacac
 }
 
-.post-inner {
-    width: 100%;
-    min-width: 600px;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    display: inline-flex;
-    justify-content: center;
-}
-.post-inner-container {
-    width: 80%;
-    min-width: 600px;
-    border-radius: 5px;
-    background: #ffffffbd;
-    box-shadow: 0 0 30px #0000007a;
-    z-index: 1;
-}
-.post-inner img{
-    width: 100%;
-}

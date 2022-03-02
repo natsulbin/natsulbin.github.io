@@ -1,0 +1,38 @@
+.post-inner {
+    width: 100%;
+    min-width: 600px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+.post-inner-container {
+    width: 80%;
+    min-width: 600px;
+    border-radius: 5px;
+    background: hsla(0, 0%, 100%, .8);
+    backdrop-filter: saturate(200%) blur(20px);
+    box-shadow: 0 0 30px rgb(0 0 0 / 20%);
+    padding: 10px
+}
+
+.post-inner-header {
+    font-family: "Times", "方正标雅宋体";
+    width: 100%;
+}
+.post-inner-title>h2 {
+    font-size: 4vw;
+    font-weight: bold;
+    margin: 0 0 0 0;
+}
+.post-inner-time {
+    font-size: 1.5vw;
+    color: #85858585;
+    margin: 0 0 1vw 0;
+}
+
+.post-inner img{
+    width: 100%;
+}
