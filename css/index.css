@@ -9,7 +9,7 @@
 }
 .page {
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: 1vw;
 }
 .page-header {
     display: inline-flex;
@@ -76,7 +76,7 @@
 .page-content>img {
     width: 100%;
     min-height: max(calc((50vw - 50px) / 3),150px);
-    border-radius: 5px;
+    border-radius: 1vw;
     object-fit: cover;
 }
 .page-content>img:nth-of-type(n+10) {
