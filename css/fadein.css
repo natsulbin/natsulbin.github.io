@@ -1,14 +1,13 @@
 body {
-    animation: bgbody 1s ease-in-out;
+    animation: body 1s ease-in-out;
 }
-.posts,
-.navbar {
-    animation: main 1s ease-in-out;
+.blog-header {
+    animation: header 1s ease-in;
 }
-.blog-header-container {
-    animation: header 1s ease-in-out;
+.main {
+    animation: page 1s ease-in;
 }
-@keyframes bgbody {
+@keyframes body {
     0% {
         opacity: 0;
         transform: translateY(-100px);
@@ -18,23 +17,19 @@ body {
         transform: translateY(0);
     }
 }
-@keyframes main {
-    0% {
-        transform: translateY(-150px);
-        z-index: 0;
-    }
-    100% {
-        transform: translateY(0);
-        z-index: 0;
-    }
-}
 @keyframes header {
     0% {
         transform: translateY(-150px);
-        z-index: 1;
     }
     100% {
         transform: translateY(0);
-        z-index: 1;
+    }
+}
+@keyframes page {
+    0% {
+        transform: translateY(-150px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
