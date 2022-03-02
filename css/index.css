@@ -1,0 +1,111 @@
+.main {
+    font-size: 10px;
+}
+.pages {
+    display: grid;
+    grid-row-gap: 10px;
+    padding: 10px 10px 0 10px;
+    background-color: #eceff5;
+}
+.page {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.page-header {
+    display: inline-flex;
+}
+.page-head {
+    width: 5vw !important;
+    border-radius: 50%;
+    margin: 10px;
+}
+.page-info {
+    margin-top: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.poster {
+    font-size: 1.2vw;
+}
+.page-time {
+    font-size: 1vw;
+    color: #858585;
+}
+
+.page-title {
+    height: 2vw;
+    margin: 0 0 0 10px;
+}
+.page-title-link {
+    text-decoration: none;
+    color: #5f5f5f;
+    font-size: 1.5vw;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out 1s;
+}
+.page-title-link:hover {
+    color: #88b0be;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+.page-content {
+    margin: 0 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content p {
+    display: none;
+}
+.page-content>blockquote {
+    margin: 0;
+    grid-area: 1 / 1 / 2 / 4;
+}
+.page-content>blockquote>p {
+    display: block;
+    font-size: 1.2vw;
+}
+.page-content>img {
+    width: 100%;
+    min-height: max(calc((50vw - 50px) / 3),150px);
+    border-radius: 5px;
+    object-fit: cover;
+}
+.page-content>img:nth-of-type(n+10) {
+    display: none;
+}
+
+.page-nav {
+    width: 100%;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 60px;
+    font-size: 1vw;
+    font-family: "Times";
+    font-weight: bold;
+}
+.page-number,
+a.extend.prev,
+a.extend.next {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 10px 0 10px;
+}
+.page-number:hover,
+a.extend.prev:hover,
+a.extend.next:hover {
+    color: #88b0be;
+}
+.page-number.current {
+    text-decoration: none;
+    color: #acacac
+}
