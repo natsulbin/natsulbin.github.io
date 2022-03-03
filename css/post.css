@@ -45,11 +45,6 @@ body {
     padding: 0 10px 10px 10px;
     border-radius: 1vw;
 }
-.post-inner img{
-    width: 100%;
-    border-radius: 1vw;
-}
-
 .post-inner {
     animation: post-inner 1s ease-in !important;
 }
