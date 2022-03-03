@@ -10,6 +10,7 @@
 .page {
     background-color: #ffffff;
     border-radius: 1vw;
+    opacity: 0;
 }
 .page-header {
     display: inline-flex;

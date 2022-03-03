@@ -5,7 +5,7 @@ body {
     animation: header 1s ease-in;
 }
 .main {
-    animation: page 1s ease-in;
+    animation: pages 1s ease-in;
 }
 @keyframes body {
     0% {
@@ -25,11 +25,21 @@ body {
         transform: translateY(0);
     }
 }
-@keyframes page {
+@keyframes pages {
     0% {
         transform: translateY(-150px);
     }
     100% {
+        transform: translateY(0);
+    }
+}
+@keyframes pagein {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
         transform: translateY(0);
     }
 }

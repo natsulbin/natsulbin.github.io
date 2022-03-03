@@ -4,11 +4,13 @@ body {
 .post-inner {
     width: 100%;
     position: absolute;
-    top: 30px;
+    top: 0;
     left: 0;
     display: inline-flex;
     justify-content: center;
     font-size: 1vw;
+    background: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(5px);
     z-index: 3;
 }
 .post-inner-container {
@@ -16,7 +18,7 @@ body {
     min-width: 550px;
     border-radius: 1.5vw;
     padding: 10px;
-    margin: 0;
+    margin: 30px 0 0 0;
     background: hsla(0, 0%, 100%, .8);
     backdrop-filter: saturate(200%) blur(20px);
     box-shadow: 0 0 30px rgb(0 0 0 / 20%);
@@ -24,7 +26,6 @@ body {
 
 .post-inner-header {
     font-family: "Times", "方正标雅宋体";
-    width: 100%;
     display: inline-flex;
     align-items: flex-end;
 }
@@ -49,9 +50,11 @@ body {
     border-radius: 1vw;
 }
 
-.header,
 .post-inner {
-    animation: post-inner 1s ease-in;
+    animation: post-inner 1s ease-in !important;
+}
+.post-inner-content {
+    animation: post-inner-content 1.5s ease-in !important;
 }
 @keyframes post-inner {
     0% {
@@ -62,9 +65,6 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
-.post-inner-content {
-    animation: post-inner-content 1.5s ease-in 1 !important;
 }
 @keyframes post-inner-content {
     0% {
