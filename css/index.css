@@ -1,5 +1,6 @@
 .main {
     font-size: 10px;
+    z-index: 1;
 }
 .pages {
     display: grid;

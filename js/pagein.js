@@ -12,7 +12,7 @@ window.onload = function() {
         }
     } else {
         var fh=document.documentElement.scrollTop;
-        if(fh+vh>=bh) {
+        if(fh+vh>=bh || fh!=0) {
             for(let i=0;i<count;i++) {
                 page[i].style.animation="pagein 0.5s ease-in";
                 page[i].style.opacity="1";
@@ -34,4 +34,13 @@ window.onscroll = function() {
             page[i].style.opacity="1";
         }
     }
+}
+
+// window 失去焦点，停止输出
+window.onblur = function() {
+    document.title = "(¦3[___] NatsuL"
+}; 
+// window 每次获得焦点
+window.onfocus = function() {
+    document.title = "NatsuL"
 }

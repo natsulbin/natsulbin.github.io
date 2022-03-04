@@ -1,5 +1,5 @@
-body {
-    animation: body 1s ease-in-out;
+.home {
+    animation: home 1s ease-in-out;
 }
 .blog-header {
     animation: header 1s ease-in;
@@ -7,7 +7,7 @@ body {
 .main {
     animation: pages 1s ease-in;
 }
-@keyframes body {
+@keyframes home {
     0% {
         opacity: 0;
         transform: translateY(-100px);

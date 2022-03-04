@@ -2,10 +2,7 @@
     width: 100%;
     margin-top: 10px;
     border-radius: 1vw;
-}
-p {
-    font-size: 16px;
-    margin: 10px 0 0 0;
+    alt: cover;
 }
 blockquote {
     font-size: 16px;
@@ -15,7 +12,7 @@ blockquote {
     padding: 20px;
     background-color: #F4F5F7;
     border-radius: 10px;
-    box-shadow: inset 0 0 5px -1px rgb(0 0 0 / 15%);
+    box-shadow: inset 0 0 5px -1px rgb(0 0 0 / 20%);
 }
 blockquote>p {
     margin: 0;
@@ -41,4 +38,114 @@ blockquote:not(:nth-of-type(1)):after {
     position: absolute;
     right: 5px;
     transform: translateY(-5px);
+}
+blockquote:first-child {
+    font-style: normal !important;
+    font-weight: bold;
+    color: #5F5F5F;
+    background-color: #ffffff00;
+    box-shadow: none;
+    padding: 0;
+    border: none;
+}
+blockquote:first-child::after {
+    font-family: "FontAwesome";
+    font-size: 30px;
+    color: #5F5F5F;
+    content: "\f0d7";
+    display: block;
+    width: 16.5px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    font-size: 2em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+hr {
+    height: 10px;
+    border: none;
+    border-bottom: 2px solid #5F5F5F;
+    margin: 0;
+}
+p {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+}
+em,
+strong {
+    padding: 0 2px 0 2px;
+}
+ul,
+ol {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 20px;
+}
+code {
+    font-family: "HarmonyOS_Sans_SC_Medium";
+}
+figure {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    background-color: #F4F5F7;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px -1px rgb(0 0 0 / 20%);
+}
+figure > table {
+    width: fit-content;
+    border-collapse: separate;
+    box-shadow: none;
+    background-color: #ffffff00;
+}
+pre {
+    font-family: "HarmonyOS_Sans_SC_Medium";
+    margin: 0;
+}
+.gutter {
+    padding: 20px 5px 20px 5px;
+    border: none;
+    border-right: 2px solid #e2e2e2;
+    line-height: 20px;
+}
+.code {
+    padding: 20px 0 20px 5px;
+    line-height: 20px;
+    border: none;
+}
+table {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: #F4F5F7;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px -1px rgb(0 0 0 / 20%);
+}
+th,
+td {
+    border: 2px solid #e2e2e2;
+}
+thead th {
+    border-top: none;
+}
+th:first-child,
+td:first-child {
+    border-left: none;
+}
+th:last-child,
+td:last-child {
+    border-right: none;
+}
+tbody tr:last-child td {
+    border-bottom: none;
 }
