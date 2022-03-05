@@ -73,9 +73,12 @@
 .page-content figure,
 .page-content height,
 .page-content table,
-.page-content blockquote
- {
+.page-content blockquote,
+.page-content pre {
     display: none;
+}
+.page-content .MathJax_Display {
+    display: none !important;
 }
 .page-content>blockquote:nth-of-type(1) {
     display: block !important;
