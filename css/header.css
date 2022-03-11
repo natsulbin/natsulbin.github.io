@@ -107,6 +107,9 @@
     animation: homeicon 3s cubic-bezier(0.62,0.21,0.25,1) infinite both;
     transition: all 0.5s ease-in-out;
 }
+.lightnight {
+    height: 0;
+}
 .icon {
     transition: color 0.5s ease-in-out;
 }
